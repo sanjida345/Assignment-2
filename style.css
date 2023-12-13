@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbarSection {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+#navbarMenu {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#navbarMenu>ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#navbarMenu>ul>li {
+    list-style: none;
+    font-weight: 600;
+}
+
+#navbarMenu>button,
+#bannerTextDiv>button {
+    background-color: #D00;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* banner start  */
+#bannerSection {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 100px;
+    margin: 20px 50px;
+    padding: 50px 50px 0 50px;
+    border-radius: 5px;
+   
+}
+
+#bannerTextDiv>h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+#bannarImageDiv {
+    margin: auto;
+}
+
+#bannarImageDiv>img {
+    height: 500px;
+}
+
+/* match times table section started   */
+#matchSection {
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+
+#buttonGroup {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    gap: 20px;
+
+}
+
+#buttonGroup>button {
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#allMatches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+}
+
+.matchCard {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.matchBanner>img {
+    width: 100%;
+}
+
+.matchInfo {
+    padding: 20px;
+}
+
+.matchInfo>button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid #161616;
+}
+
+.matchIcon {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.time,
+.comment {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#buttonGroup>#redBtn {
+    background-color: red;
+    color: white;
+}
+
+/* match times table section ended  */
+/* footer started  */
+footer{
+padding: 80px 50px;
+background-color: #161616;
+
+}
+#footerMainDiv{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #FFF;
+}
+#footerMainDiv>h1{
+font-size: 40px;
+font-weight: 600;
+}
+hr{
+width: 1000px;
+border-radius: 1px solid gray;
+text-align: center;
+}
+#footerMenuDiv>ul{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+justify-content: space-evenly;
+gap: 20px;
+align-items: center;
+}
+#footerMenuDiv>ul>li{
+list-style: none;
+font-size: 16px;
+font-weight: 600;
+color: #B9B9B9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+
+    /* nabvar start  */
+    #navbarSection {
+        padding: 10px 30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #navbarMenu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #navbarMenu>ul {
+        gap: 30px;
+    }
+    #navbarMenu>button {
+        padding: 10px 20px;
+    }
+    /* banner start  */
+    #bannerSection {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 50px;
+        margin: 10px 30px;
+        padding: 30px 30px 0 30px;
+        border-radius: 5px;
+    }
+    #bannerTextDiv {
+        text-align: center;
+    }
+    #bannerTextDiv>h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    #bannerTextDiv>button {
+        margin: auto;
+    }
+    #bannarImageDiv {
+        margin: auto;
+    }
+    #bannarImageDiv>img {
+        height: 300px;
+    }
+    /* match times table section started   */
+    #matchSection {
+        padding: 5
+        px 3px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    #buttonGroup {
+        background-color: white;
+        align-items: center;
+        gap: 10px;
+    }
+    #buttonGroup>button {
+        background-color: #ffffff;
+        color: black;
+        border: 1px solid #E8E8E8;
+    }
+    #allMatches {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .matchCard {
+        border: 1px solid gray;
+        width: 250px;
+    }
+    /* match times table section ended  */
+/* footer section start */
+#footerMainDiv{
+padding: 30px 40px;
+}
+#footerMainDiv>h1{
+font-size: 30px;
+font-weight: 500;
+}
+hr{
+width: 200px;
+}
+#footerMenuDiv>ul{
+grid-template-columns: repeat(3,1fr);
+
+}
+
+
+/* footer section end */
+}
